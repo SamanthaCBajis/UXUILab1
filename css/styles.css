@@ -1,23 +1,32 @@
-/* Mobile/Tablet Display */
+/* Mobile Display */
 
-flex-container {
+.flex-container {
     display: flex;           
     flex-direction: column;
 }
+html {
+    border: 5px solid lavender;
+    height: 98.6%;
+}
 
 body {
-    background-color: #d5dff3;
+    background-color: #ccccff;
     font-family: 'Lato', sans-serif;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 18px;
     width: 40%;
     color: #000;
     padding-top: 10px;
-
 }
+
+img {
+    display: none;
+}
+
 
 .links {
     display: flex;            
@@ -25,39 +34,29 @@ body {
  }
 
  a {
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: #000;
     padding: 5px;
     padding-top: 0px;
+    margin-top: 10px;
 }
 
 button { 
-    font-weight: 350;
+    font-weight: 400;
     font-size: 20px;
     width: 100%; 
     color: #f9fafc;
-    background-color: #000;
+    background-color: #000; 
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 8px;
 } 
-
-/* #scroll_button {
-    font-weight: 350;
-    font-size: 15px;
-    width:100%;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
-} */
 
 .sign_up {
     font-weight: 700;
@@ -69,138 +68,142 @@ button {
 
 .please_contact {
     font-weight: 600;
+    font-style: italic;
     font-size: 16px;
     text-align: center;
     width: 90%;        
-    color: black;
+    color: #69696a;
     padding-top: 5px;
     padding-bottom: 8px;
     padding-left: 10px;
 }
 
 input {
-    width:100%;
+    font-weight: 500;
+    color: #000;
+    font-size: 13px;
+    background-color: rgb(249, 251, 252);
+    width:94%;
     padding: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-top: 10px;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
     color: transparent;
+}
 
 
 /* Desktop Display */
 
 @media only screen and (min-width: 480px) {
 .flexcontainer {
-        display: flex;       
-        flex-direction: row;
+    display: flex;          
+    flex-direction: row;
     }
 
+html {
+    border: 5px solid lavender;
+    height: 98.6%;
+}
 body {
-    background-color: #f9fafc;
-    font-family: 'Open Sans', sans-serif;    
+    background-color: #ccccff;
+    font-family: 'Lato', sans-serif;   
 }
 
-.heading {
-    font-weight: bold;
-    font-size: 14px;
+section {
+    background-color: lavender;
+    box-shadow: 10px 10px 5px rgb(186, 186, 212);
+    padding: 100px;
+    width: 800px;
+    height: -30px;
+    margin-left: 190px;
+    border-radius: 100%;
+  
+}
+
+.logo {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 20px;
     color: #000;
     padding-top: 10px;
     padding-left: 10px;
 }
 
-.nav_links {
+img {
+    display: flex;          
+    flex-direction: row;
+    margin-left: 82%;
+    margin-top: -70px;
+}
+
+.links {
     display: flex;         
     flex-direction: row;
-    margin-left: 60%;
+    margin-left: 69%;
+    padding-bottom: 30px;
 }
 
 a {
     display: flex;          
     flex-direction: row;
-    font-weight: 800;
-    color: #69696a;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 20px;
+    color: #000;
     margin-right: 50px;
     text-decoration: none;
-    
 }
 
-.chirpus_Line {
-    font-weight: 700;
+.sign_up {
+    font-weight: 900;
     font-size: 30px;
-    width: 90%;
+    width: 88%;
     color: #000;
-    margin-top: 38px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: -10px;
+    margin-left: 7%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
-.latin_Line {
-    font-weight: 600;
+.please_contact {
+    font-weight: 900;
     font-size: 16px;
     width: 90%;         
     color: #69696a;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     padding-left: 20px;
-    margin-left: 20px;
-    border-left: 3px solid #bdbdc0;  
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 4%; 
 }
 
 button {
     font-weight: 400;
-    font-size: 14px;
-    width: auto;
+    font-size: 20px;
+    width: 20%;
     color: #f9fafc;
     background-color: #000;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 20px;
+    border-radius: 8px;
+    margin-left: 40%;
 }
 
-#scroll_button {
-    font-weight: 350;
-    width: auto;
-    margin-top: 10px;
-    margin-left: 600px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    
+input {
+    width: 30%;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgb(249, 251, 252);
+    padding: -10px;
+    padding-top: -30px;
+    margin-left: 12%;
 }
 
-.circle1 {
-    position: relative;
-    background:rgba(247, 136, 167, 0.6);
-    border-radius: 100%;
-    width: 300px;
-    height: 300px;
-    top: -100px;
-    left: 1000px;
+[placeholder]:focus::-webkit-input-placeholder {
+    color: transparent;
 }
-
-.circle2 {
-    position: absolute;
-    background: rgba(207, 130, 213, 0.6);
-    border-radius: 100%;
-    width: 140px;
-    height: 140px;
-    left: 250px;
-    top: 40px;
-    overflow: hidden;
-}
-
-.circle3 {
-    position: relative;
-    background: rgba(247, 193, 162, 0.7);
-    border-radius: 100%;
-    width: 180px;
-    height: 180px;
-    left: 200px;
-    top: 150px;
-    overflow: hidden;
 }
